@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3º Ano de Exatas</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CABEÇALHO INVERTIDO */
+        .cabecalho {
+            display: flex;
+            flex-direction: row-reverse; /* Logo e Menu na direita, Título na esquerda */
+            align-items: center; 
+            padding: 15px;
+            background-color: #f0f0f0;
+            border-bottom: 2px solid #ff0202;
+        }
+
+        /* LOGO QUADRADA (DIREITA) */
+        .logo-container {
+            width: 120px;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            margin-left: 20px; 
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .logo-bandeira {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* MENU (AO LADO DA LOGO) */
+        .menu {
+            display: flex;
+            gap: 15px;
+        }
+
+        .menu-link {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: 0.3s;
+        }
+
+        .menu-link:hover {
+            background-color: #ff0000;
+            color: white;
+        }
+
+        /* TÍTULO (ESQUERDA) */
+        .titulo {
+            margin: 0;
+            margin-right: auto; 
+            font-size: 1.8em;
+            color: #222;
+        }
+
+        /* CARDS DE PROJETOS */
+        .gif-container {
+            display: flex;
+            justify-content: center;
+            margin: 15px 0;
+        }
+        .gif-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .lista li {
+            list-style: none;
+            background-color: #ffffff;
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 5px solid #ff0000;
+        }
+        .projeto-titulo {
+            font-weight: bold;
+            font-size: 1.2em;
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <div class="logo-container">
+            <img src="img/Bandeira_de_Minas_Gerais.svg.png" alt="Bandeira de Minas Gerais" class="logo-bandeira">
+        </div>
+
+        <nav class="menu">
+            <a class="menu-link" href="#">Início</a>
+            <a class="menu-link" href="#">Projetos</a>
+            <a class="menu-link" href="#">Alunos</a>
+            <a class="menu-link" href="#">Contato</a>
+        </nav>
+
+        <h1 class="titulo">Turma 3º Ano de Exatas</h1>
+    </header>
+
+    <main class="conteudo">
+
+        <section class="bloco">
+            <h2 class="subtitulo">Sobre a Turma</h2>
+            <p class="texto">Somos alunos focados em tecnologia, matemática e inovação.</p>
+        </section>
+
+        <section class="bloco">
+            <h2 class="subtitulo">Projetos</h2>
+            <ul class="lista">
+                <li>
+                    <span class="projeto-titulo">Robótica com Arduino</span>
+                    <div class="gif-container">
+                        <img src="img/robotica.gif" alt="Robótica">
+                    </div>
+                </li>
+                <li>
+                    <span class="projeto-titulo">Criação de Sites</span>
+                    <div class="gif-container">
+                        <img src="img/sites.gif" alt="Desenvolvimento Web">
+                    </div>
+                </li>
+                <li>
+                    <span class="projeto-titulo">Jogos Digitais</span>
+                    <div class="gif-container">
+                        <img src="img/jogos.gif" alt="Gameplay de Jogos">
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="bloco">
+            <h2 class="subtitulo">Alunos</h2>
+            <p class="texto">Abaixo você encontrará a lista oficial da nossa turma:</p>
+            <ul class="lista">
+                <li>Lista de alunos será adicionada aqui.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <p>Projeto escolar &copy; 2026</p>
+    </footer>
+
+    <script>
+        console.log("%c 🚀 SISTEMA EXATAS ATUALIZADO ", "background: #222; color: #0f0; font-size: 15px;");
+        console.log("Todos os blocos foram restaurados com sucesso!");
+    </script>
+</body>
+</html>
